@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentário</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+
+<body>
+
+    <ul id="menu">
+        <li>
+            <a href="index.html"> Diadema</a>
+        </li>
+        <li>
+            <a href="comentario.html"> Comentário</a>
+        </li>
+    </ul>
+
+    <h1 class="center">Deixe um comentário</h1>
+
+    <div class="container mb">
+        <form>
+            <label for="nome"> Nome:</label><br>
+            <input type="text" id="nome" onkeyup='validaNome()'>
+            <div id="txtNome"></div>
+            <br>
+            <label for="email"> E-mail:</label><br>
+            <input type="email" id="email" onkeyup='validaEmail()'>
+            <div id="txtEmail"></div>
+            <br>
+            <label for="comentario"> Comentário:</label><br>
+            <textarea name="comentario" id="comentario" cols="60" rows="6" onkeyup='validaComentario()'></textarea>
+            <div id="txtComentario"></div>
+            <br>
+            <button onclick="enviar()">Enviar</button>
+        </form>
+        <div class="ml">
+            <h2>Localização</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58453.97459200399!2d-46.648450702623165!3d-23.69835571131912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce445de3962263%3A0x9ca2ba904b9421db!2sDiadema%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1650342969226!5m2!1spt-BR!2sbr"
+                width="320" height="240" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()"
+                id="mapa"></iframe>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="container">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img class="tm p" src="Assets/img/Facebook.webp" alt="Logo do Facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="tm p" src="Assets/img/Instagram.webp" alt="Logo do Instagram">
+            </a>
+            <a href="https://br.linkedin.com/" target="_blank">
+                <img class="tm p" src="Assets/img/LinkedIn.png" alt="Logo do LinkedIn">
+            </a>
+        </div>
+        <p class="center">
+            Guilherme Stefanin &copy;
+        </p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
